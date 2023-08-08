@@ -3,4 +3,8 @@
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="br.com.alura.gerenciador.model.Banco"/>
+    <fullyQualifiedTypeName name="br.com.alura.gerenciador.acao.RemoveEmpresa"/>
+    <fullyQualifiedTypeName name="br.com.alura.gerenciador.acao.MostraEmpresa"/>
 </qualifiedTypeNameHistroy>
