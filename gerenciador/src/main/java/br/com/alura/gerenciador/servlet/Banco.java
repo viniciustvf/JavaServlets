@@ -1,8 +1,8 @@
 package br.com.alura.gerenciador.servlet;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Banco {
 	
@@ -23,6 +23,7 @@ public class Banco {
 	}
 
 	public void adiciona(Empresa empresa) {
+		empresa.setId(chaveSequencial++);
 		Banco.lista.add(empresa);
 	}
 	
@@ -31,9 +32,25 @@ public class Banco {
 	}
 	
 	public void removeEmpresa(Integer id) {
-	    lista = lista.stream()
-	        .filter(emp -> !emp.getId().equals(id))
-	        .collect(Collectors.toList());
+		Iterator it = lista.iterator();
+		
+		while(it.hasNext()) {
+			Empresa emp = (Empresa) it.next();
+			
+			if(emp.getId() == id) {
+				it.remove();
+			}
+		}
+	}
+
+	public Empresa findById(Integer id) {
+		for(Empresa emp : lista) {
+			if(emp.getId() == id) {
+				return emp;
+			}
+		}
+		return null;
+		
 	}
 
 
