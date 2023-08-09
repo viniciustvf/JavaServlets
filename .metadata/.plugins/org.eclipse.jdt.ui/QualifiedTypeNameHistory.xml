@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="br.com.alura.gerenciador.model.Banco"/>
     <fullyQualifiedTypeName name="br.com.alura.gerenciador.acao.RemoveEmpresa"/>
     <fullyQualifiedTypeName name="br.com.alura.gerenciador.acao.MostraEmpresa"/>
+    <fullyQualifiedTypeName name="br.com.alura.gerenciador.acao.Acao"/>
 </qualifiedTypeNameHistroy>
